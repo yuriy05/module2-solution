@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    line-height: 25px;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: ghostwhite;
+}
+/*Main settings*/
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container p {
+    margin-top: 30px
+}
+/*Sections*/
+.section {
+    float: left;
+    width: 33.33%;
+    padding: 20px;
+    background-color: #E5E5E5;
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+}
+
+.section-title1,
+.section-title2,
+.section-title3 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    border: 1px solid black;
+}
+
+/*Backgrounds colors*/
+.section-title1 {
+    background-color: rgb(210, 125, 125);
+}
+
+.section-title2 {
+    background-color: rgb(232, 52, 52);
+}
+
+.section-title3 {
+    background-color: rgb(222, 238, 41);
+}
+
+/*Media quaries*/
+@media only screen and (max-width: 767px) {
+    .section {
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .section {
+        width: 50%;
+    }
+
+    .section:nth-child(3) {
+        width: 100%;
+    }
+}
